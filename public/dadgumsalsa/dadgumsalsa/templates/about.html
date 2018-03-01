@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block head_title %}About{% endblock %}
+
+{% load staticfiles %}
+
+{% block left_frame %}
+<img class="blog-image" src="{% static 'images/DGS_tomato.png' %}" alt="tomato" />
+{% endblock %}
+
+{% block content %}
+<video width="520" height="440" controls>
+  <source src="{% static 'dadgumStillMovie.m4v' %}" type="video/x-m4v">
+  Your browser does not support the video tag.
+</video>
+{% endblock %}

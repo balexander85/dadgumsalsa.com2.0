@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% load staticfiles %}
+<head>
+    <link type="image/png" rel="shortcut icon" href="{% static 'images/tomato_Favicon.png' %}"/>
+    <meta name="author" content="Brian Alexander" />
+    <meta name="description" content="Dad Gum Salsa Coming Soon!" />
+    <meta name="keywords" content="Dad Gum, Salsa, Dad Gum Salsa, Chips and Salsa" />
+    <title>DGS | {% block head_title %}title{% endblock %}</title>
+    <!--Cascading Style Sheets for this Dad'Gum Website-->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    {% block page_scripts %}
+    {% endblock %}
+</head>
+<body>
+    <table>
+        <td class='left-frame'>
+            {% block left_frame %}
+            {% endblock %}
+        </td>
+        <td class="main-frame">
+            {% block content %}
+            {% endblock %}
+        </td>
+    </table>
+    {% include "menu.html" %}
+</body>
+</html>

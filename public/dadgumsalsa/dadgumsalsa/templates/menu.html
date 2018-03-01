@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<div class="menu-frame">
+	<table class="menu-bar">
+		<tr>
+			<td>
+				<a href="{% url 'index' %}">
+				<img src="{% static 'menu_items/DGSfrontTitle.png' %}" alt="Dad Gum Salsa" />
+				</a>
+			</td>
+			<td>
+				<a class="linkopacity" href="{% url 'about' %}">
+				<img src="{% static 'menu_items/DGSaboutLink.png' %}" alt="About" />
+				</a>
+			</td>
+			<td>
+				<a class="linkopacity" href="{% url 'order' %}">
+				<img src="{% static 'menu_items/DGSorderLink.png' %}" alt="Order" />
+				</a>
+			</td>
+			<td>
+				<a class="linkopacity" href="{% url 'contact' %}">
+				<img src="{% static 'menu_items/DGScontactLink.png' %}" alt="Contact" />
+				</a>
+			</td>
+		</tr>
+	</table>
+</div>

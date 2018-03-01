@@ -1,0 +1,67 @@
+body
+{
+	background-color: #FFFFFF;
+}
+.main-frame
+{
+	margin: auto;
+	height: 395px;
+	max-width: 712px;
+	overflow: auto;
+}
+.left-frame
+{
+	width: 412px;
+	height: 400px;
+}
+.right-image
+{
+	margin: 1px;
+	width: 600px;
+}
+#video
+{
+	height: 378px;
+	width: 640px;
+}
+.menu-bar
+{
+	height: 33px;
+	width: 285px;
+}
+.post {
+	margin: 5px;
+	padding: 10px;
+	width: 600px;
+	height: 400px;
+	overflow:scroll;
+}
+.blog-image {
+	width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img {
+    border-style: none;
+}
+.superscript { position: relative; top: -0.5em; font-size: 80%; }
+a{text-decoration:none;}
+a:link {color:#0000FF;}     /* unvisited link */
+a:visited {color:#3333CC;}  /* visited link */
+a:hover {color:#33AD33} /* mouse over link */
+a:active {color:#000000;}  /* selected link */
+a.linkopacity img
+{
+	filter:alpha(opacity=25);
+	-moz-opacity: 0.25;
+	opacity: 0.25;
+	-khtml-opacity: 0.25;
+}
+a.linkopacity:hover img
+{
+	filter:alpha(opacity=100);
+	-moz-opacity: 1.0;
+	opacity: 1.0;
+	-khtml-opacity: 1.0;
+}
